@@ -1,0 +1,26 @@
+name: market-intel
+display_name: Market & Competitive Intelligence
+tagline: RFP monitoring, competitor signals, and content strategy for CRM Experts Online
+description: |
+  Monitors public procurement (SAM.gov, RFPMart) for CRM/Salesforce RFPs, tracks
+  competitor signals for target accounts, and develops content/authority strategy
+  for CRM consulting inbound.
+
+  Migrated from OpenClaw cron jobs (Daily CRM RFP Alerts, Competitor Intelligence,
+  Daily Content & Authority Strategy). Runs headless in an isolated Trinity container.
+
+  Dashboard / output is served over Tailscale at:
+  https://nucbox-k6.tail04e488.ts.net/market-intel
+version: "1.0"
+author: John Perez
+resources:
+  cpu: "1"
+  memory: "2g"
+use_cases:
+  - "Run RFP monitoring now"
+  - "Show competitor signals for target accounts"
+  - "Draft this week's content and authority angles"
+capabilities:
+  - web_research
+  - html_report_composition
+  - scheduled_reporting
